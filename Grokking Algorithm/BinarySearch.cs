@@ -8,9 +8,6 @@ namespace Grokking_Algorithm
 {
     class BinarySearch
     {
-
-       
-
         public int BSearch(List<int> arr, int item)
         {
             int low = 0;
@@ -25,8 +22,6 @@ namespace Grokking_Algorithm
                     high = mid - 1;
                 else
                     low = mid + 1;
-
-
             }
             return 0;
         }
