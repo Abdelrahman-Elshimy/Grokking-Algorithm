@@ -9,28 +9,16 @@ namespace Grokking_Algorithm
     class BinarySearch
     {
 
-        public List<int> Arr { get; set; }
+       
 
-        public List<int> GetList()
-        {
-            Arr = new List<int>
-            {
-                1,
-                2, 
-                3, 
-                4
-            };
-            return Arr;
-        }
-
-        public int BSearch(int item)
+        public int BSearch(List<int> arr, int item)
         {
             int low = 0;
-            int high = GetList().Count - 1;
+            int high = arr.Count - 1;
             while(low <= high)
             {
                 int mid = (low + high) / 2;
-                int guess = GetList()[mid];
+                int guess = arr[mid];
                 if (guess == item)
                     return mid;
                 if (guess > item)
