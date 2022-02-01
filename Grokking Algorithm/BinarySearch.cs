@@ -8,6 +8,17 @@ namespace Grokking_Algorithm
 {
     class BinarySearch
     {
+        // O Notation of binary search
+        // O(log n)
+
+        #region  Hints
+        // Binary search is a lot faster than simple search
+        // O(log n) is faster than O(n), but it gets a lot faster once the list of items you are searching through grows.
+        // Algorithm speed isn't measured in seconds.
+        // Algorithm times are measured in terms of growth of an algorithm
+        // Algorithm times are written in Big O notation.
+        #endregion
+
         public int BSearch(List<int> arr, int item)
         {
             int low = 0;
