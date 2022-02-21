@@ -16,20 +16,23 @@ namespace Grokking_Algorithm
 
             #region Selection Sort Algorithm
 
-            List<int> List = new List<int> { 8, 9, 1, 7, 5, 6, 4, 3, 2 };
-            SeclectionSort seclectionSort = new SeclectionSort();
-            var sortedArray = seclectionSort.SelectionSorts(List);
-            
-            foreach(int a in sortedArray)
-            {
-                Console.WriteLine(a);
-            }
+            //List<int> List = new List<int> { 8, 9, 1, 7, 5, 6, 4, 3, 2 };
+            //SeclectionSort seclectionSort = new SeclectionSort();
+            //var sortedArray = seclectionSort.SelectionSorts(List);
+
+            //foreach(int a in sortedArray)
+            //{
+            //    Console.WriteLine(a);
+            //}
 
 
             #endregion
-
-
-
+            #region Recursion
+            Recursion recursion = new Recursion();
+            int x = 10;
+            recursion.CountDown(ref x);
+            Console.WriteLine(x);
+            #endregion
 
         }
     }
